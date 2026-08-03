@@ -17,8 +17,17 @@ body {
   width: 100%;
   display: block;
 }
+.img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+main .grid-2-columns img {
+  height: 100%;
+  object-fit: cover;
 }
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
@@ -33,9 +42,11 @@ body {
 .card-header.grid {
   grid-gap: 0;
 }
-.embed {
+.card-header img,
+.card-header .embed {
   width: 100%;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 .card-body {
   padding: 30px;
